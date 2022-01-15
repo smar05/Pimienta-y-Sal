@@ -9,3 +9,7 @@ Menu virtual para el restaurante gastronomico Pimienta & sal
 
 - **npm install**
 - **npm start**
+
+## Despliegue
+
+[pimienta y sal](https://pimientaysal-menu.herokuapp.com/)
