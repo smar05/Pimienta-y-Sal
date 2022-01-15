@@ -17,4 +17,6 @@ app.use("/", mainRoutes);
 app.use("/detalle", detalleMenuRoutes);
 
 //Inicializar el servidor
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+app.listen(process.env.PORT || port, () =>
+  console.log(`Example app listening on port ${port}!`)
+);
