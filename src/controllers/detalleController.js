@@ -1,6 +1,12 @@
+let productos = require("../database/menu.json");
+
 const controller = {
-  index: (req, res) => {
-    res.render("detalleMenu");
+  detalleProducto: (req, res) => {
+    let id = req.params.id;
+
+    let producto = productos.find((producto) => producto.id == id);
+
+    res.render("detalleMenu", { producto: producto });
   },
 };
 
